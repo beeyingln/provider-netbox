@@ -23,13 +23,13 @@ import (
 	tjconfig "github.com/crossplane/terrajet/pkg/config"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 
-	"github.com/crossplane-contrib/provider-jet-template/config/resource"
+	"github.com/crossplane-contrib/provider-jet-netbox/config/resource"
 	jsonpatch "github.com/evanphx/json-patch"
 )
 
 const (
-	resourcePrefix = "template"
-	modulePath     = "github.com/crossplane-contrib/provider-jet-template"
+	resourcePrefix = "netbox"
+	modulePath     = "github.com/crossplane-contrib/provider-jet-netbox"
 )
 
 //go:embed schema.json

@@ -1,11 +1,13 @@
-apiVersion: resource.template.jet.crossplane.io/v1alpha1
+apiVersion: resource.netbox.jet.crossplane.io/v1alpha1
 kind: Resource
 metadata:
   name: addressresource1
   annotations:
-    terraformResourceType: <RESOURCE_TYPE>
+    terraformResourceType: netbox_ip_address
 spec:
   forProvider:
-    <RESOURCE_DEFINITION>
+    description: "Managed with Crossplane Netbox Provider (generated with Terrajet)"
+    ipAddress: "192.0.0.50/24"
+    status: "reserved"
   providerConfigRef:
     name: default
